@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Проектирование AI-систем, автоматизации и внутренних цифровых контуров для бизнеса — без хаоса, лишнего найма и перегруженных процессов."
+    />
+    <title>AI-системы и автоматизация для бизнеса</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#hero" aria-label="Главная">
+        <img src="./assets/aivion-logo.png" alt="Логотип" width="164" height="44" />
+      </a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="#cases">Кейсы</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#services">Услуги</a>
+        <a href="#process">Процесс</a>
+        <a href="/privacy">Политика</a>
+        <a class="button button-accent button-compact" href="#contactModal" data-open-form>Обсудить задачу</a>
+      </nav>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        id="menuToggle"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+        aria-label="Открыть меню"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-nav" aria-label="Мобильная навигация">
+        <a href="#cases">Кейсы</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#services">Услуги</a>
+        <a href="#process">Процесс</a>
+        <a href="/privacy">Политика</a>
+        <a class="button button-accent" href="#contactModal" data-open-form>Обсудить задачу</a>
+      </nav>
+    </div>
+
+    <main class="site-main">
+      <section class="section opening-screen" id="welcome">
+        <div class="opening-screen__background" aria-hidden="true">
+          <div class="opening-screen__lottie" id="openingScreenLottie"></div>
+          <div class="opening-screen__cursor-glow"></div>
+          <div class="opening-screen__cursor-ring"></div>
+          <div class="opening-screen__grain"></div>
+        </div>
+        <div class="section-inner opening-screen__inner">
+          <p class="eyebrow stagger-item">System Design / AI / Automation</p>
+          <h1 class="opening-screen__title stagger-item">
+            Усиливаем бизнес не количеством людей, а качеством систем.
+          </h1>
+          <p class="opening-screen__lead stagger-item">
+            Проектируем AI-инструменты, автоматизацию и внутренние процессы так, чтобы команда работала
+            быстрее, точнее и спокойнее — без перегруза и хаотичного масштабирования.
+          </p>
+          <div class="opening-screen__actions stagger-item">
+            <a class="button button-accent" href="#contactModal" data-open-form>Запросить разбор</a>
+            <a class="button opening-screen__ghost" href="#cases">Посмотреть кейсы</a>
+          </div>
+          <div class="hero-meta stagger-item" aria-label="Ключевые преимущества">
+            <article class="hero-stat glass-card">
+              <span class="hero-stat__label">Фокус</span>
+              <strong>AI + внутренние системы</strong>
+            </article>
+            <article class="hero-stat glass-card">
+              <span class="hero-stat__label">Подход</span>
+              <strong>От аудита к внедрению</strong>
+            </article>
+            <article class="hero-stat glass-card">
+              <span class="hero-stat__label">Результат</span>
+              <strong>Меньше ручной рутины</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero" id="hero">
+        <div class="hero-panels">
+          <article class="hero-panel current">
+            <p class="hero-copy">Когда рост бизнеса держится на людях, предел появляется быстрее, чем кажется.</p>
+          </article>
+          <article class="hero-panel">
+            <p class="hero-copy">Найм закрывает часть задач. Но не убирает узкие места, ручные операции и управленческий шум.</p>
+          </article>
+          <article class="hero-panel">
+            <p class="hero-copy">Поэтому мы строим системы, которые разгружают команду и создают новый запас мощности.</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="shared-sections">
+        <div class="shared-sections__background" aria-hidden="true">
+          <canvas class="section-dot-grid"></canvas>
+          <div class="mesh-layer">
+            <span class="mesh mesh-a"></span>
+            <span class="mesh mesh-b"></span>
+            <span class="mesh mesh-c"></span>
+          </div>
+        </div>
+
+        <section class="section intro" id="team">
+          <div class="section-inner intro-layout intro-layout-centered">
+            <div class="section-copy section-copy-centered">
+              <p class="eyebrow stagger-item">Архитектура роста</p>
+              <h2 class="stagger-item">Мы собираем контур, в котором бизнес растёт без операционного перегрева.</h2>
+              <p class="section-text stagger-item">
+                Не просто внедряем модный AI. Мы смотрим на реальную логику бизнеса: где теряется скорость,
+                где люди дублируют действия, где решение можно перевести в систему, а не в дополнительную ставку.
+              </p>
+            </div>
+          </div>
+
+          <div class="section-inner promise-grid">
+            <article class="glass-card promise-card stagger-item">
+              <span class="case-number">01</span>
+              <h3>Минимум лишних данных</h3>
+              <p>Собираем в форме только то, что нужно для обратной связи и первичной квалификации запроса.</p>
+            </article>
+            <article class="glass-card promise-card stagger-item">
+              <span class="case-number">02</span>
+              <h3>Решения под задачу</h3>
+              <p>AI, CRM, сайт, Telegram-бот или внутренняя панель — выбираем не тренд, а рабочий инструмент.</p>
+            </article>
+            <article class="glass-card promise-card stagger-item">
+              <span class="case-number">03</span>
+              <h3>Прозрачный контур</h3>
+              <p>Документы, обработка запросов и интерфейс формы собраны так, чтобы сайт было легче довести до production.</p>
+            </article>
+          </div>
+
+          <div class="section-action section-inner stagger-item">
+            <a class="button button-accent" href="#contactModal" data-open-form>Обсудить задачу</a>
+          </div>
+        </section>
+
+        <section class="section cases-section" id="cases">
+          <div class="section-inner">
+            <div class="section-heading glow-heading">
+              <p class="eyebrow stagger-item">Кейсы</p>
+              <h2 class="stagger-item">Примеры систем, которые реально снимают нагрузку</h2>
+              <p class="section-text stagger-item">
+                Каждый кейс — это не «фича ради фичи», а конкретная точка разгрузки команды.
+              </p>
+            </div>
+
+            <div class="cases-grid">
+              <article class="glass-card case-card stagger-item">
+                <span class="case-number">01</span>
+                <h3>AI‑подготовка ТЗ</h3>
+                <p>Превращает брифы, созвоны и заметки в структурированные спецификации по нужному шаблону.</p>
+              </article>
+
+              <article class="glass-card case-card stagger-item">
+                <span class="case-number">02</span>
+                <h3>Контур обработки лидов</h3>
+                <p>Собирает обращения, нормализует ввод, раскладывает лиды по воронке и подготавливает данные для CRM.</p>
+              </article>
+
+              <article class="glass-card case-card stagger-item">
+                <span class="case-number">03</span>
+                <h3>Генерация контента</h3>
+                <p>Помогает редакции и маркетингу быстро собирать темы, заготовки и тексты в нужном тоне бренда.</p>
+              </article>
+
+              <article class="glass-card case-card stagger-item">
+                <span class="case-number">04</span>
+                <h3>Внутренняя операционная панель</h3>
+                <p>Единый слой управления проектами, статусами, резервированием данных и ролевым доступом.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="section portfolio-section" id="portfolio">
+          <div class="section-inner">
+            <div class="section-heading glow-heading">
+              <p class="eyebrow stagger-item">Готовые кейсы</p>
+              <h2 class="stagger-item">Портфолио решений в формате stacking cards</h2>
+              <p class="section-text stagger-item">
+                Ниже — реальные направления и продукты: от AI-разбора звонков до внутренних платформ,
+                маркетплейсов и multi-agent систем. При скролле карточки наслаиваются друг на друга как
+                колода — без выхода из общей палитры и визуального языка сайта.
+              </p>
+            </div>
+
+            <div class="portfolio-stack">
+              <article class="portfolio-card glass-card stagger-item">
+                <div class="portfolio-card__meta">
+                  <span class="case-number">01</span>
+                  <span class="portfolio-card__tag">AI / Call Center</span>
+                </div>
+                <h3>AI-микросервис для автоматического разбора заказов из телефонных звонков</h3>
+                <p>
+                  Система для call-центра, которая превращает звонки в структурированные заказы, снижает
+                  долю ручного ввода и ускоряет обработку обращений.
+                </p>
+                <ul class="portfolio-card__list">
+                  <li>извлечение данных из разговоров</li>
+                  <li>подготовка заказов к дальнейшей обработке</li>
+                  <li>снижение нагрузки на операторский контур</li>
+                </ul>
+                <a class="portfolio-card__link" href="https://telegra.ph/Kejs-Razrabotka-AI-mikroservisa-dlya-avtomaticheskogo-razbora-zakazov-iz-telefonnyh-zvonkov-02-19" target="_blank" rel="noopener noreferrer">Открыть кейс</a>
+              </article>
+
+              <article class="portfolio-card glass-card stagger-item">
+                <div class="portfolio-card__meta">
+                  <span class="case-number">02</span>
+                  <span class="portfolio-card__tag">Ops / Corporate System</span>
+                </div>
+                <h3>Корпоративная система управления проектами и резервным копированием PBMS</h3>
+                <p>
+                  Внутренний контур для контроля проектов, ролевого доступа и надёжного резервирования,
+                  собранный как единая операционная среда.
+                </p>
+                <ul class="portfolio-card__list">
+                  <li>единая панель управления</li>
+                  <li>ролевой доступ и контроль процессов</li>
+                  <li>резервное копирование и стабильность данных</li>
+                </ul>
+                <a class="portfolio-card__link" href="https://telegra.ph/Kejs-Razrabotka-korporativnoj-sistemy-upravleniya-proektami-i-rezervnym-kopirovaniem-PBMS-02-19" target="_blank" rel="noopener noreferrer">Открыть кейс</a>
+              </article>
+
+              <article class="portfolio-card glass-card stagger-item">
+                <div class="portfolio-card__meta">
+                  <span class="case-number">03</span>
+                  <span class="portfolio-card__tag">Cloud / Dev Tools</span>
+                </div>
+                <h3>Облачный менеджер скриптов с веб-интерфейсом CloudBase</h3>
+                <p>
+                  Инструмент для управления сценариями и автоматизациями через удобный браузерный интерфейс
+                  вместо разрозненных ручных запусков.
+                </p>
+                <ul class="portfolio-card__list">
+                  <li>централизованное управление скриптами</li>
+                  <li>веб-интерфейс для командной работы</li>
+                  <li>удобный слой для операционных задач</li>
+                </ul>
+                <a class="portfolio-card__link" href="https://telegra.ph/Kejs-Razrabotka-oblachnogo-menedzhera-skriptov-s-veb-interfejsom-CloudBase-02-19" target="_blank" rel="noopener noreferrer">Открыть кейс</a>
+              </article>
+
+              <article class="portfolio-card glass-card stagger-item">
+                <div class="portfolio-card__meta">
+                  <span class="case-number">04</span>
+                  <span class="portfolio-card__tag">LLM / Prompt Engineering</span>
+                </div>
+                <h3>Среда для пакетного тестирования и отладки промптов локальных LLM</h3>
+                <p>
+                  Инженерная среда для системной проверки prompt-сценариев, сравнительного тестирования
+                  и более предсказуемой работы локальных моделей.
+                </p>
+                <ul class="portfolio-card__list">
+                  <li>батч-тестирование промптов</li>
+                  <li>локальный цикл разработки и отладки</li>
+                  <li>повышение качества LLM-сценариев</li>
+                </ul>
+                <a class="portfolio-card__link" href="https://telegra.ph/Kejs-Razrabotka-sredy-dlya-paketnogo-testirovaniya-i-otladki-promptov-lokalnyh-LLM-02-19" target="_blank" rel="noopener noreferrer">Открыть кейс</a>
+              </article>
+
+              <article class="portfolio-card glass-card stagger-item">
+                <div class="portfolio-card__meta">
+                  <span class="case-number">05</span>
+                  <span class="portfolio-card__tag">Web3 / Premium Marketplace</span>
+                </div>
+                <h3>Премиальный маркетплейс искусства с NFT-верификацией</h3>
+                <p>
+                  Визуально дорогая digital-платформа для продажи картин с уровнем подачи, который работает
+                  и как продукт, и как брендовый опыт.
+                </p>
+                <ul class="portfolio-card__list">
+                  <li>premium UX для арт-платформы</li>
+                  <li>NFT-верификация цифрового происхождения</li>
+                  <li>сильная визуальная презентация каталога</li>
+                </ul>
+                <a class="portfolio-card__link" href="https://telegra.ph/Kejs-Razrabotka-premialnogo-marketplejsa-iskusstva-s-NFT-verifikaciej-02-19" target="_blank" rel="noopener noreferrer">Открыть кейс</a>
+              </article>
+
+              <article class="portfolio-card glass-card stagger-item">
+                <div class="portfolio-card__meta">
+                  <span class="case-number">06</span>
+                  <span class="portfolio-card__tag">Multi-Agent / Telegram</span>
+                </div>
+                <h3>Multi-agent система для автоматизации SMM в Telegram</h3>
+                <p>
+                  Комплекс для подготовки постов, orchestration-сценариев и ускорения контентного production
+                  в Telegram-каналах.
+                </p>
+                <ul class="portfolio-card__list">
+                  <li>автоматизация SMM-пайплайна</li>
+                  <li>генерация и сборка постов</li>
+                  <li>мультиагентный подход к контенту</li>
+                </ul>
+                <a class="portfolio-card__link" href="https://telegra.ph/Kejs-Razrabotka-multiagentnoj-sistemy-dlya-avtomatizacii-SMM-v-Telegram-02-19" target="_blank" rel="noopener noreferrer">Открыть кейс</a>
+              </article>
+
+              <article class="portfolio-card glass-card stagger-item">
+                <div class="portfolio-card__meta">
+                  <span class="case-number">07</span>
+                  <span class="portfolio-card__tag">AI Assistant / Design Specs</span>
+                </div>
+                <h3>AI-ассистент для автоматической генерации дизайн-спецификаций</h3>
+                <p>
+                  Помощник, который ускоряет проектирование интерфейсов и переводит замысел в структурированные
+                  спецификации для дальнейшей разработки.
+                </p>
+                <ul class="portfolio-card__list">
+                  <li>ускорение подготовки спецификаций</li>
+                  <li>связка дизайна и разработки</li>
+                  <li>снижение ручной рутины в продуктовой команде</li>
+                </ul>
+                <a class="portfolio-card__link" href="https://telegra.ph/Kejs-Razrabotka-AI-assistenta-dlya-avtomaticheskoj-generacii-dizajn-specifikacij-LLM-Progger-02-19" target="_blank" rel="noopener noreferrer">Открыть кейс</a>
+              </article>
+
+              <article class="portfolio-card glass-card stagger-item">
+                <div class="portfolio-card__meta">
+                  <span class="case-number">08</span>
+                  <span class="portfolio-card__tag">EdTech / US Market</span>
+                </div>
+                <h3>Образовательная платформа для рынка США</h3>
+                <p>
+                  Платформенный продукт для обучения и масштабирования образовательного опыта с акцентом
+                  на структурированный пользовательский путь и развитие digital-сервиса.
+                </p>
+                <ul class="portfolio-card__list">
+                  <li>образовательный digital-продукт</li>
+                  <li>архитектура пользовательского сценария</li>
+                  <li>ориентация на международный рынок</li>
+                </ul>
+                <a class="portfolio-card__link" href="https://telegra.ph/Vot-kejs-sostavlennyj-na-osnove-analiza-koda-LeadQuest-AI--DISC-Academy-02-19" target="_blank" rel="noopener noreferrer">Открыть кейс</a>
+              </article>
+
+              <article class="portfolio-card glass-card stagger-item">
+                <div class="portfolio-card__meta">
+                  <span class="case-number">09</span>
+                  <span class="portfolio-card__tag">AI / Crypto Analytics</span>
+                </div>
+                <h3>AI-система институциональной аналитики криптовалютного рынка</h3>
+                <p>
+                  Аналитический контур для работы с крипторынком на уровне сигналов, паттернов и более глубокой
+                  интерпретации рыночных данных.
+                </p>
+                <ul class="portfolio-card__list">
+                  <li>институциональный слой аналитики</li>
+                  <li>работа со сложными рыночными данными</li>
+                  <li>AI-подход к интерпретации сигналов</li>
+                </ul>
+                <a class="portfolio-card__link" href="https://telegra.ph/Kejs-Razrabotka-AI-sistemy-institucionalnoj-analitiki-kriptovalyutnogo-rynka-02-19" target="_blank" rel="noopener noreferrer">Открыть кейс</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+      <section class="section services-section" id="services">
+        <div class="section-background" aria-hidden="true">
+          <canvas class="section-dot-grid"></canvas>
+          <div class="mesh-layer">
+            <span class="mesh mesh-a"></span>
+            <span class="mesh mesh-b"></span>
+            <span class="mesh mesh-c"></span>
+          </div>
+        </div>
+        <div class="section-inner">
+          <div class="section-heading glow-heading">
+            <p class="eyebrow stagger-item">Что делаем</p>
+            <h2 class="stagger-item">Строим не разрозненные инструменты, а управляемый цифровой слой бизнеса</h2>
+            <p class="section-text stagger-item">
+              Иногда задача решается AI, иногда — интерфейсом, ботом, регламентом или новой логикой процесса.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="glass-card service-card stagger-item">
+              <h3>AI и автоматизация</h3>
+              <ul class="service-list">
+                <li>AI-ассистенты для команд и отделов</li>
+                <li>автоматизация обработки заявок и документов</li>
+                <li>разбор диалогов, брифов и входящих обращений</li>
+                <li>контентные и аналитические AI-сценарии</li>
+              </ul>
+            </article>
+
+            <article class="glass-card service-card stagger-item">
+              <h3>Системы и интерфейсы</h3>
+              <ul class="service-list">
+                <li>сайты и landing pages с сильной подачей</li>
+                <li>внутренние кабинеты, CRM и панели</li>
+                <li>Telegram-боты и операционные интеграции</li>
+                <li>архитектура данных, ролей и сценариев доступа</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="section-action stagger-item">
+            <a class="button button-accent" href="#contactModal" data-open-form>Запросить разбор</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process">
+        <div class="section-background" aria-hidden="true">
+          <canvas class="section-dot-grid"></canvas>
+          <div class="mesh-layer">
+            <span class="mesh mesh-a"></span>
+            <span class="mesh mesh-b"></span>
+            <span class="mesh mesh-c"></span>
+          </div>
+        </div>
+        <div class="section-inner">
+          <div class="section-heading glow-heading">
+            <p class="eyebrow stagger-item">Процесс</p>
+            <h2 class="stagger-item">Работаем так, чтобы с первого шага было понятно, зачем нужен следующий</h2>
+          </div>
+
+          <div class="process-list">
+            <article class="process-step stagger-item">
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" /></svg>
+              </div>
+              <span class="process-number">01</span>
+              <div class="process-copy">
+                <h3>Первичный разбор</h3>
+                <p>Фиксируем задачу, ограничения, текущий процесс и точку, в которой команда теряет ресурс.</p>
+              </div>
+            </article>
+
+            <article class="process-step stagger-item">
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 7h14M5 12h10M5 17h8" /></svg>
+              </div>
+              <span class="process-number">02</span>
+              <div class="process-copy">
+                <h3>Модель решения</h3>
+                <p>Предлагаем конкретный контур: что автоматизировать, что оставить людям и где нужен интерфейс.</p>
+              </div>
+            </article>
+
+            <article class="process-step stagger-item">
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 19l5-6 4 3 5-7" /><circle cx="10" cy="13" r="1.6" fill="currentColor" stroke="none" /></svg>
+              </div>
+              <span class="process-number">03</span>
+              <div class="process-copy">
+                <h3>Проектирование и запуск</h3>
+                <p>Собираем визуальный и технический слой, тестируем пользовательский сценарий и доводим запуск до рабочего состояния.</p>
+              </div>
+            </article>
+
+            <article class="process-step stagger-item">
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M9 6h9v9" /></svg>
+              </div>
+              <span class="process-number">04</span>
+              <div class="process-copy">
+                <h3>Встраивание в процессы</h3>
+                <p>Помогаем не просто выпустить решение, а встроить его в реальную повседневную работу команды.</p>
+              </div>
+            </article>
+
+            <article class="process-step stagger-item">
+              <div class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 12l4 4 8-8" /></svg>
+              </div>
+              <span class="process-number">05</span>
+              <div class="process-copy">
+                <h3>Поддержка и развитие</h3>
+                <p>После запуска отслеживаем стабильность, корректируем UX и масштабируем систему по мере роста бизнеса.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-inner footer-grid">
+          <div>
+          <p class="eyebrow">AI Systems</p>
+          <p class="footer-note">
+            AI-системы, автоматизация и внутренние цифровые контуры для бизнеса.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="/privacy">Политика обработки персональных данных</a>
+          <a href="/consent">Согласие на обработку персональных данных</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="contact-modal" id="contactModal" aria-hidden="true">
+      <div class="contact-modal__backdrop" data-close-form></div>
+      <div class="contact-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+        <button class="contact-modal__close" type="button" aria-label="Закрыть форму" data-close-form>+</button>
+        <div class="contact-modal__content modal-layout">
+          <aside class="contact-side">
+            <p class="eyebrow">Запрос</p>
+            <h2 id="contactModalTitle">Обсудим задачу предметно</h2>
+            <p class="section-text">
+              Опишите задачу коротко и по сути. Мы используем только необходимые данные, чтобы связаться с вами
+              и подготовить следующий шаг.
+            </p>
+            <div class="contact-scope glass-card">
+              <h3>Что важно знать</h3>
+              <ul class="service-list">
+                <li>обязательные поля сведены к минимуму</li>
+                <li>согласие даётся отдельным действием, без предустановки</li>
+                <li>политика и текст согласия доступны до отправки формы</li>
+              </ul>
+            </div>
+          </aside>
+
+          <div class="contact-main">
+            <form class="contact-form contact-form--compliance" id="contactForm">
+              <div class="field-grid">
+                <label class="field">
+                  <span>Имя *</span>
+                  <input type="text" name="firstName" autocomplete="given-name" required />
+                </label>
+                <label class="field">
+                  <span>Компания</span>
+                  <input type="text" name="company" autocomplete="organization" />
+                </label>
+              </div>
+
+              <div class="field-grid">
+                <label class="field">
+                  <span>Контакт для связи *</span>
+                  <input
+                    type="text"
+                    name="contact"
+                    required
+                    autocomplete="email tel"
+                    placeholder="Телефон, email или Telegram"
+                  />
+                </label>
+                <label class="field">
+                  <span>Предпочтительный канал</span>
+                  <select name="contactMethod">
+                    <option value="Telegram">Telegram</option>
+                    <option value="Телефон">Телефон</option>
+                    <option value="Email">Email</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                  </select>
+                </label>
+              </div>
+
+              <fieldset class="choice-group">
+                <legend>Ваша роль</legend>
+                <div class="choice-grid">
+                  <label class="choice-chip">
+                    <input type="radio" name="role" value="Собственник" checked />
+                    <span>Собственник</span>
+                  </label>
+                  <label class="choice-chip">
+                    <input type="radio" name="role" value="Руководитель" />
+                    <span>Руководитель</span>
+                  </label>
+                  <label class="choice-chip">
+                    <input type="radio" name="role" value="Маркетинг" />
+                    <span>Маркетинг</span>
+                  </label>
+                  <label class="choice-chip">
+                    <input type="radio" name="role" value="Другое" />
+                    <span>Другое</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <label class="field hidden-field" id="customRoleField">
+                <span>Уточните роль</span>
+                <input type="text" name="customRole" />
+              </label>
+
+              <label class="field">
+                <span>Кратко о задаче *</span>
+                <textarea
+                  name="details"
+                  required
+                  minlength="10"
+                  placeholder="Например: хотим сократить ручную обработку заявок и выстроить понятный контур работы с лидами"
+                ></textarea>
+              </label>
+
+              <label class="field field--trap" aria-hidden="true">
+                <span>Website</span>
+                <input type="text" name="website" tabindex="-1" autocomplete="off" />
+              </label>
+
+              <div class="consent-list">
+                <label class="consent-check">
+                  <input type="checkbox" name="policyAccepted" value="yes" required />
+                  <span>
+                    Я ознакомился(ась) с
+                    <a href="/privacy" target="_blank" rel="noopener noreferrer">Политикой обработки персональных данных</a>.
+                  </span>
+                </label>
+
+                <label class="consent-check">
+                  <input type="checkbox" name="consentAccepted" value="yes" required />
+                  <span>
+                    Даю согласие на обработку моих персональных данных для рассмотрения обращения и обратной связи в соответствии с
+                    <a href="/consent" target="_blank" rel="noopener noreferrer">текстом согласия</a>.
+                  </span>
+                </label>
+              </div>
+
+              <p class="form-legal-note">
+                Если вы не дадите согласие на обработку данных, мы не сможем обработать заявку и связаться с вами.
+              </p>
+
+              <div class="form-footer">
+                <button class="button button-accent" type="submit" id="submitButton">Отправить запрос</button>
+                <p class="form-status" id="formStatus" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
